@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: {{ include "myapp.fullname" . }}
 data:
-  default.json: {{ .Files.Get "default.json" | toJson }}
+  default.json: {{ .Files.Get "config/default.json" | toJson }}
