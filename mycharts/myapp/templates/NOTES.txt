@@ -30,3 +30,12 @@ Include
 {{ include "myapp.chart" . }}
 {{ include "myapp.name" . }}
 {{/*{{ include "myapp.labels" . }}*/}}
+
+>>> if cond:
+{{- if eq .Values.service.type "ClusterIP" -}}
+    It is ClusterIP service
+{{- end }}
+
+{{- if eq .Values.service.type "Unknown" -}}
+{{- fail "Just fail!" }}
+{{- end }}
