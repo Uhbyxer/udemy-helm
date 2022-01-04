@@ -44,4 +44,4 @@ Include
 {{ .Values.imported.containerPort }}
 
 >>>>>>> Test lib
-Pull policy: {{ include "libpolicy.imagePullPolicy" }}
+Pull policy: {{ include "libpolicy.imagePullPolicy" . }}
