@@ -39,3 +39,6 @@ Include
 {{- if eq .Values.service.type "Unknown" -}}
 {{- fail "Just fail!" }}
 {{- end }}
+
+>>>>>>> Access child values from the parent
+{{ .Values.imported.containerPort }}
