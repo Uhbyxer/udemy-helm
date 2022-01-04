@@ -42,3 +42,6 @@ Include
 
 >>>>>>> Access child values from the parent
 {{ .Values.imported.containerPort }}
+
+>>>>>>> Test lib
+Pull policy: {{ include "libpolicy.imagePullPolicy" }}

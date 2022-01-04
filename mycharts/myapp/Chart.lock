@@ -2,5 +2,8 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 15.6.10
-digest: sha256:b1d2b05ed5518875aea99d0c3d9f7c260879d9994b553d34d329f843b15f33aa
-generated: "2022-01-04T16:42:48.1678966+02:00"
+- name: libpolicy
+  repository: file://..//libpolicy
+  version: 0.1.0
+digest: sha256:6477e3aead592f007687655c2ffbc57b3befccc1e24b1b43189d4ae418495b9d
+generated: "2022-01-04T22:08:41.3782293+02:00"
