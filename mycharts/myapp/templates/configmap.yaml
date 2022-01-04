@@ -4,11 +4,4 @@ metadata:
   name: {{ include "myapp.fullname" .}}
 data:
   default.json: |
-    {
-       "network": {
-          "port": "80"
-        },
-        "environment": {
-        "SSL": false
-        }
-    }
+  {{ .Files.Get "default.json" | indent 4 }}
