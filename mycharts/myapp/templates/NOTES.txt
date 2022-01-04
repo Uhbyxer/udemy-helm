@@ -24,3 +24,9 @@
 
 Run weather docker:
 docker run -p 8080:80 -d -e APIKEY=509f5214b2mshbdf3524b421a065p16f718jsn2012d1467c5c -v C:\repo-sandbox\helm\mycharts\myapp\config\default.json:/app/config/default.json afakharany/hellonodejs:2.0.0
+
+Include
+{{ include "myapp.fullname" . }}
+{{ include "myapp.chart" . }}
+{{ include "myapp.name" . }}
+{{/*{{ include "myapp.labels" . }}*/}}
