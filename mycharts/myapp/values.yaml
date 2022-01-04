@@ -80,3 +80,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+# access child chart (redis)
+redis:
+  auth:
+    enabled: false
+
