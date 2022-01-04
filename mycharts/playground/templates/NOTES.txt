@@ -12,3 +12,7 @@ Is upgrade ?: {{ .Release.IsUpgrade }}
  Kube Ver: {{.Capabilities.KubeVersion }}
 {{/* API Versions: {{ .Capabilities.APIVersions }}*/}}
  Helm Version: {{ .Capabilities.HelmVersion }}
+
+ -------------------- Resources --------------------
+resources:
+                   {{- toYaml .Values.resources | nindent 2}}
